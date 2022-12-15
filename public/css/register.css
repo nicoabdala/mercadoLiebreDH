@@ -1,0 +1,88 @@
+@import url(var.css);
+@import url(header.css);
+@import url(footer.css);
+
+main {
+    margin: auto;
+    width: 90vw;
+    max-width: 800px;
+}
+
+.create-form {
+    padding: 20px 15px;
+}
+
+.create-form label {
+    display: block;
+    font-weight: 600;
+    font-size: 1.05rem;
+    margin: 12px 0;
+}
+
+.control, .create-form button, .form-control div {
+    width: 100%;
+    border: none;
+    padding: 12px;
+    margin: 12px 0;
+    border-radius: 4px;
+}
+
+.form-control div {
+    padding-inline: 4px;
+}
+
+.form-control div span {
+    margin-right: 14px;
+    margin-left: 10px;
+}
+
+div.checkboxes {
+    padding: 0;
+    padding-left: 5px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.checkboxes div {
+    width: 80%;
+}
+
+.create-form a button {
+    background-color: var(--celeste);
+    color: #FFF;
+}
+
+.create-form button {
+    background-color: var(--rojo);
+    color: #FFF;
+}
+
+.create-form a button:hover {
+    background-color: #0022AA;
+    cursor: pointer;
+}
+
+.create-form button:hover {
+    background-color: #831b1b;
+    cursor: pointer;
+}
+
+#avatar {
+    width: 100%;
+}
+
+/*------------------------ MEDIA QUERIES ------------------------*/
+
+@media (min-width: 460px) {
+    div.checkboxes div {
+        width: 40%;
+    }
+}
+
+
+@media (min-width: 620px) {
+    div.checkboxes div {
+        width: 30%;
+    }
+}
