@@ -59,12 +59,12 @@ div.checkboxes div {
 }
 
 .create-form a button:hover {
-    background-color: #0022AA;
+    background-color: #1539c9;
     cursor: pointer;
 }
 
 .create-form button:hover {
-    background-color: #831b1b;
+    background-color: #eb0404;
     cursor: pointer;
 }
 

@@ -9,12 +9,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="/public/css/login.css">
 </head>
 <body>
     <header>
         <section class="header-top-bar">
-            <a href="/"><img src="img/logo-mercado-liebre.svg" alt="Logo MercadoLiebre" class="logo"></a>
+            <a href="/src/views/index.html"><img src="/public/img/logo-mercado-liebre.svg" alt="Logo MercadoLiebre" class="logo"></a>
             <div class="search-box">
                 <form action="/" method="get">
                     <input type="text" name="search" class="search" placeholder="Buscá productos, marcas y más" required>
@@ -31,15 +31,15 @@
                 <li><a href="#">Ayuda</a></li>
             </ul>
             <ul class="right-nav">
-                <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
-                <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="/src/views/register.html">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+                <li><a href="/src/views/login.html">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
                 <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
             </ul>
         </nav>
         <div class="burger-menu centrado">
             <i class="fas fa-bars"></i>
         </div>
-        <a href="/" class="bannerlink"><img src="/img/img-home-banner.jpg" alt="Home Banner" class="banner"></a>
+        <img src="/public/img/img-home-banner.jpg" alt="Home Banner" class="banner">
     </header>
 
     <main>
