@@ -6,36 +6,35 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    max-width: 1180px;
     margin: auto;
+    max-width: 1180px;
 }
 
 footer section {
     max-width: 1200px;
 }
 
-footer p {
-    color: var(--gris-oscuro);
-    font-size: 12px;
-}
-
 footer h4 {
     color: var(--gris-oscuro);
-    font-size: 16px;
+    font-size: 18px;
 }
 
-.informacion {
+footer p {
+    color: var(--gris-oscuro);
+    font-size: 14px;
+}
+
+.info {
+    text-align: center;
     max-width: 80%;
     margin: auto;
-    text-align: center;
 }
 
-.informacion .centrado {
-    padding-top: 22px;
-    padding-bottom: 8px;
+.info .footer-text {
+    padding: 20px 0 10px 0;
 }
 
-.informacion i {
+.info i {
     font-size: 26px;
     color: var(--celeste);
 }
@@ -53,7 +52,7 @@ footer h4 {
         width: 30%;
     }
 
-    .informacion i:hover {
+    .info i:hover {
         color: #0022AA;
     }
 }
