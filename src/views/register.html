@@ -13,24 +13,24 @@
 </head>
 <body>
     <header>
-        <section class="header-top-bar">
+        <section class="header-menu">
             <a href="/src/views/index.html"><img src="/public/img/logo-mercado-liebre.svg" alt="Logo MercadoLiebre" class="logo"></a>
-            <div class="search-box">
+            <div class="header-menu-busqueda">
                 <form action="/" method="get">
                     <input type="text" name="search" class="search" placeholder="Buscá productos, marcas y más" required>
                     <button class="searchBtn"><i class="fas fa-search"></i></button>
                 </form>
             </div>
-            <h2 class="copy-header"><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito</h2>
+            <h2 class="header-pagos"><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito</h2>
         </section>
         <nav>
-            <ul class="left-nav">
+            <ul class="nav-izq">
                 <li><a href="#">Ofertas</a></li>
                 <li><a href="#">Tiendas Oficiales</a></li>
                 <li><a href="#">Vender</a></li>
                 <li><a href="#">Ayuda</a></li>
             </ul>
-            <ul class="right-nav">
+            <ul class="nav-der">
                 <li><a href="/src/views/register.html">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
                 <li><a href="/src/views/login.html">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
                 <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
@@ -43,36 +43,33 @@
     </header>
 
     <main>
-        <form action="/" method="POST" class="create-form">
-            <div class="form-control">
-                <input type="text" name="fullName" id="fullName" placeholder="Nombre y apellido" class="control">
+        <form action="/" method="POST" class="register-form">
+            <div class="form-data">
+                <input type="text" name="fullName" id="fullName" placeholder="Nombre y apellido" class="data">
             </div>
-            <div class="form-control">
-                <input type="text" name="username" id="username" placeholder="Nombre de usuario" class="control">
+            <div class="form-data">
+                <input type="text" name="username" id="username" placeholder="Nombre de usuario" class="data">
             </div>
-            <div class="form-control">
-                <input type="email" name="email" id="email" placeholder="E-mail" class="control">
+            <div class="form-data">
+                <input type="email" name="email" id="email" placeholder="E-mail" class="data">
             </div>
-            <div class="form-control">
-                <label for="birthdate">Fecha de nacimiento</label>
-                <input type="date" name="birthdate" id="birthdate" class="control">
+            <div class="form-data">
+                <label for="birthdate">Datos personales</label>
+                <input type="date" name="birthdate" id="birthdate" class="data">
             </div>
-            <div class="form-control">
-                <input type="text" name="address" id="address" placeholder="Domicilio" class="control">
+            <div class="form-data">
+                <input type="text" name="address" id="address" placeholder="Domicilio" class="data">
             </div>  
-            <div class="form-control">
+            <div class="form-data">
                 <label for="profile">Perfil del usuario</label>
                 <div>
                         <input type="radio" name="perfil" value="comprador"> <span>Comprador</span>
                         <input type="radio" name="perfil" value="vendedor"> <span>Vendedor</span>
                 </div>
             </div>
-            <div class="form-control">
+            <div class="form-data">
                 <label for="interests">Intereses</label>
                 <div class="checkboxes">
-                    <div>
-                        <input type="checkbox" name="interests" value="electro"> <span>Electro</span>
-                    </div>
                     <div>
                         <input type="checkbox" name="interests" value="moda"> <span>Moda</span>
                     </div>
@@ -80,24 +77,27 @@
                         <input type="checkbox" name="interests" value="hogar"> <span>Hogar</span>
                     </div>
                     <div>
-                        <input type="checkbox" name="interests" value="jugueteria"> <span>Juguetería</span>
+                        <input type="checkbox" name="interests" value="electronica"> <span>Electronica</span>
                     </div>
                     <div>
-                        <input type="checkbox" name="interests" value="vida-sana"> <span>Vida sana</span>
+                        <input type="checkbox" name="interests" value="deportes"> <span>Deportes</span>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="interests" value="envios-gratis"> <span>Envios Gratis</span>
                     </div>
                 </div>
             </div>
-            <div class="form-control">
-                <label for="avatar">Foto de usuario</label>
+            <div class="form-data">
+                <label for="avatar">Foto de perfil</label>
                 <div>
                     <input type="file" name="avatar" id="avatar" accept=".png, .jpg, .jpeg">
                 </div>
             </div>  
-            <div class="form-control">
-                <input type="password" name="password" placeholder="Contraseña" class="control">
+            <div class="form-data">
+                <input type="password" name="password" placeholder="Contraseña" class="data">
             </div>
-            <div class="form-control">
-                <input type="password" name="password" placeholder="Confirmar contraseña" class="control">
+            <div class="form-data">
+                <input type="password" name="password" placeholder="Confirmar contraseña" class="data">
             </div>
             <button type="reset">Borrar</button>
             <a href="/"><button type="button">Registrarme</button></a>

@@ -8,37 +8,36 @@ main {
     max-width: 800px;
 }
 
-.create-form {
+.register-form {
     padding: 20px 15px;
 }
 
-.create-form label {
+.register-form label {
     display: block;
+    font-size: 1.08rem;
     font-weight: 600;
-    font-size: 1.05rem;
-    margin: 12px 0;
+    margin: 10px 0;
 }
 
-.control, .create-form button, .form-control div {
-    width: 100%;
+.data, .register-form button, .form-data div {
     border: none;
-    padding: 12px;
-    margin: 12px 0;
-    border-radius: 4px;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
 }
 
-.form-control div {
-    padding-inline: 4px;
+.form-data div {
+    padding-inline: 5px;
 }
 
-.form-control div span {
+.form-data div span {
     margin-right: 14px;
     margin-left: 10px;
 }
 
 div.checkboxes {
-    padding: 0;
-    padding-left: 5px;
+    padding: 0 0 0 5px;
     margin: 0;
     display: flex;
     flex-wrap: wrap;
@@ -48,23 +47,23 @@ div.checkboxes div {
     width: 80%;
 }
 
-.create-form a button {
-    background-color: var(--celeste);
-    color: #FFF;
-}
-
-.create-form button {
+.register-form button {
     background-color: var(--rojo);
     color: #FFF;
 }
 
-.create-form a button:hover {
-    background-color: #1539c9;
+.register-form a button {
+    background-color: var(--celeste);
+    color: #FFF;
+}
+
+.register-form button:hover {
+    background-color: #eb0404;
     cursor: pointer;
 }
 
-.create-form button:hover {
-    background-color: #eb0404;
+.register-form a button:hover {
+    background-color: #1539c9;
     cursor: pointer;
 }
 
@@ -74,14 +73,14 @@ div.checkboxes div {
 
 /*------------------------ MEDIA QUERIES ------------------------*/
 
-@media (min-width: 460px) {
+@media (min-width: 480px) {
     div.checkboxes div {
         width: 40%;
     }
 }
 
 
-@media (min-width: 620px) {
+@media (min-width: 640px) {
     div.checkboxes div {
         width: 30%;
     }

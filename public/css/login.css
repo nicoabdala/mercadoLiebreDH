@@ -8,11 +8,11 @@ main {
     max-width: 800px;
 }
 
-.create-form {
+.login-form {
     padding: 20px 15px;
 }
 
-.control, .create-form button{
+.data, .login-form button{
     width: 100%;
     border: none;
     padding: 12px;
@@ -20,23 +20,12 @@ main {
     border-radius: 4px;
 }
 
-.create-form button {
+.login-form button {
     background-color: var(--celeste);
     color: #FFF;
 }
 
-.create-form button:hover {
+.login-form button:hover {
     background-color: #1539c9;
     cursor: pointer;
-}
-
-/*------------------------ MEDIA QUERIES ------------------------*/
-
-@media (min-width: 600px) {
-    
-}
-
-
-@media (min-width: 1060px) {
-    
 }

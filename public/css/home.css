@@ -18,8 +18,8 @@ main article {
 
 main h2 {
     font-size: 24px;
+    color: black;
     padding: 12px 0;
-    color: var(--gris-oscuro);
 }
 
 main p {
@@ -36,10 +36,10 @@ main p {
     width: 80%;
 }
 
-.article-data {
+.main-article-prod {
     background-color: white;
-    border-top: solid 1px var(--gris-claro);
     padding: 15px;
+    border-top: solid 1px var(--gris-claro);
 }
 
 .logo-envio {
@@ -50,18 +50,18 @@ main p {
     display: block;
     font-size: 16px ;
     padding: 5px;
-    width: 30px;
     height: 30px;
+    width: 30px;
     border: 1px solid var(--verde);
-    color: var(--verde);
     background-color: #FFF;
+    color: var(--verde);
     border-radius: 50%;
     position: absolute;
     right: 5px;
     top: -30px;
 }
 
-.pricing {
+.precio-desc {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -74,8 +74,8 @@ main p {
 
 .descuentos {
     font-size: 16px;
-    color: var(--verde);
     width: 50%;
+    color: var(--verde);
 }
 
 main article img {
@@ -84,9 +84,9 @@ main article img {
 }
 
 .descripcion {
+    color: var(--gris-oscuro);
     display: none;
     font-size: 16px;
-    color: var(--gris-oscuro);
     margin-top: 16px;
 }
 
@@ -94,21 +94,8 @@ main article img {
 /*------------------------ MEDIA QUERIES ------------------------*/
 
 @media (min-width: 600px) {
-    .article-data {
+    .main-article-prod {
         padding-bottom: 51px;
-    }
-
-    main article:hover .descripcion {
-        display: block;
-    }
-
-    main article:hover .article-data {
-        padding-bottom: 15px;
-    }
-
-    main article:hover {
-        box-shadow: 0px 0px 10px rgb( 100 , 100 , 100 );
-        cursor: pointer;
     }
 
     main article {
@@ -117,6 +104,19 @@ main article img {
 
     main article:hover .logo-envio i {
         transform: rotate(-90deg);
+    }
+
+    main article:hover .main-article-prod {
+        padding-bottom: 15px;
+    }
+
+    main article:hover .descripcion {
+        display: block;
+    }
+
+    main article:hover {
+        box-shadow: 0px 0px 10px rgb( 100 , 100 , 100 );
+        cursor: pointer;
     }
 
     .logo-envio i {
